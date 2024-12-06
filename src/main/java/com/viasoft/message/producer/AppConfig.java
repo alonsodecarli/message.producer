@@ -24,11 +24,6 @@ public class AppConfig {
     public ConnectionFactory connectionFactory() {
         ActiveMQConnectionFactory factory = new ActiveMQConnectionFactory();
         try {
-            /*
-            factory.setBrokerURL("tcp://localhost:61616");
-            factory.setUser("artemis");
-            factory.setPassword("iaMuhgNJuViEey9");
-             */
             factory.setBrokerURL(brokerUrl);
             factory.setUser(username);
             factory.setPassword(password);
